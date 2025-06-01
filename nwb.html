@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health & Wellness Blog</title>
+  <style>
+        .blog-image {
+            width: 400%; /* Make it scale to the width of its container */
+            max-width: 200px; /* Optional: restrict the maximum width */
+            height: auto; /* Maintain the aspect ratio */
+        }
+    </style>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  
+  <header class="header">
+    <div class="container">
+      <h1>Health & Wellness Blog</h1>
+      <p>Your ultimate guide to living a healthier, happier life</p>
+      <!-- Search Bar -->
+     <div class="search-container">
+    <input type="text" id="search" placeholder="Search blogs..." class="search-input">
+  <button type="button" class="search-button" onclick="searchBlogs()">Search</button>
+</div>
+
+    </div>
+  </header>
+
+  <main class="blog-container">
+    <div class="blog-grid">
+
+      <!-- Blog Post 1 -->
+      <div class="blog-post">
+        <img src="https://i.postimg.cc/d0GMKXZX/migrane.jpg" alt="Migrane Image" class="blog-image"  >
+
+
+        <div class="content">
+          <h2 class="blog-title">10 Tips for a Healthier Lifestyle</h2>
+          <p class="blog-excerpt">Learn simple, actionable steps to transform your life.</p>
+          <div class="infographic">
+            <i class="fas fa-apple-alt"></i> Nutrition | 
+            <i class="fas fa-running"></i> Fitness | 
+            <i class="fas fa-heart"></i> Wellness
+          </div>
+          <button class="read-more" onclick="toggleContent('blog1')">Read More</button>
+        </div>
+        <div class="full-content" id="blog1">
+          <div class="content">
+            <h3>10 Tips for a Healthier Lifestyle</h3>
+            <ol>
+              <li><i class="fas fa-apple-alt"></i> <strong>Eat a Balanced Diet:</strong> Include a variety of fruits, vegetables, lean proteins, and whole grains in your meals.</li>
+              <li><i class="fas fa-tint"></i> <strong>Stay Hydrated:</strong> Drink 8-10 glasses of water daily.</li>
+              <li><i class="fas fa-dumbbell"></i> <strong>Exercise Regularly:</strong> At least 30 minutes, five days a week.</li>
+              <li><i class="fas fa-bed"></i> <strong>Get Quality Sleep:</strong> Sleep 7-9 hours per night.</li>
+              <li><i class="fas fa-smile"></i> <strong>Practice Mindfulness:</strong> Meditate or focus on breathing daily.</li>
+              <li><i class="fas fa-leaf"></i> <strong>Spend Time Outdoors:</strong> Get sunlight for vitamin D.</li>
+              <li><i class="fas fa-hand-holding-heart"></i> <strong>Foster Social Connections:</strong> Spend time with loved ones.</li>
+              <li><i class="fas fa-recycle"></i> <strong>Avoid Harmful Habits:</strong> Limit alcohol, avoid smoking.</li>
+              <li><i class="fas fa-chart-line"></i> <strong>Set Achievable Goals:</strong> Small, realistic changes matter.</li>
+              <li><i class="fas fa-grin-beam"></i> <strong>Focus on Positivity:</strong> A positive mindset improves health.</li>
+            </ol>
+            <button class="close" onclick="toggleContent('blog1')">Close</button>
+          </div>
+        </div>
+      </div>
+            <!-- Blog Post 7 -->
+      <div class="blog-post">
+        <img src="https://i.postimg.cc/k4DxSrNY/migrane.jpg" alt="Superfoods for Better Immunity" class="blog-image">
+        <div class="content">
+          <h2 class="blog-title">Superfoods for Better Immunity</h2>
+          <p class="blog-excerpt">Learn about the powerful superfoods that can enhance your immune system and keep you healthy.</p>
+          <div class="infographic">
+            <i class="fas fa-leaf"></i> Nutrition | 
+            <i class="fas fa-heart"></i> Immunity
+          </div>
+          <button class="read-more" onclick="toggleContent('blog7')">Read More</button>
+        </div>
+        <div class="full-content" id="blog7">
+          <div class="content">
+            <h3>10 Superfoods for Better Immunity</h3>
+            <ol>
+              <li><i class="fas fa-leaf"></i> <strong>Spinach:</strong> Rich in vitamins C and E, iron, and antioxidants, spinach helps in fighting infections and boosting immunity.</li>
+              <li><i class="fas fa-orange"></i> <strong>Oranges:</strong> Packed with vitamin C, oranges help stimulate the production of white blood cells, which are key to fighting off viruses.</li>
+              <li><i class="fas fa-apple-alt"></i> <strong>Apples:</strong> High in fiber and vitamin C, apples are great for strengthening your immune system and improving gut health.</li>
+              <li><i class="fas fa-garlic"></i> <strong>Garlic:</strong> Known for its antiviral and antibacterial properties, garlic contains allicin, which helps boost your immunity.</li>
+              <li><i class="fas fa-broccoli"></i> <strong>Broccoli:</strong> Packed with vitamins A, C, and E, as well as fiber, broccoli supports your immune system by helping to repair damaged cells.</li>
+              <li><i class="fas fa-nutritionix"></i> <strong>Almonds:</strong> Rich in vitamin E, almonds help to regulate immune function and promote overall health.</li>
+              <li><i class="fas fa-sun"></i> <strong>Turmeric:</strong> Curcumin, the active compound in turmeric, has strong anti-inflammatory and antioxidant properties that help fight off infections.</li>
+              <li><i class="fas fa-fish"></i> <strong>Salmon:</strong> High in omega-3 fatty acids, salmon boosts your immune system by reducing inflammation and improving the function of immune cells.</li>
+              <li><i class="fas fa-strawberry"></i> <strong>Strawberries:</strong> Rich in antioxidants and vitamin C, strawberries help reduce oxidative stress, which can weaken immunity.</li>
+              <li><i class="fas fa-lemon"></i> <strong>Lemons:</strong> Full of vitamin C, lemons help detoxify your body and support immune function, while also promoting hydration.</li>
+            </ol>
+            <button class="close" onclick="toggleContent('blog7')">Close</button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Blog Post 2 -->
+      <div class="blog-post">
+        <img src="https://via.placeholder.com/400x300" alt="Blog 2" class="blog-image">
+        <div class="content">
+          <h2 class="blog-title">Mindfulness for Beginners</h2>
+          <p class="blog-excerpt">Discover how mindfulness can transform your life.</p>
+          <div class="infographic">
+            <i class="fas fa-brain"></i> Mind | 
+            <i class="fas fa-leaf"></i> Calmness
+          </div>
+          <button class="read-more" onclick="toggleContent('blog2')">Read More</button>
+        </div>
+        <div class="full-content" id="blog2">
+          <div class="content">
+            <h3>10 Mindfulness Tips for Beginners</h3>
+            <ol>
+              <li><i class="fas fa-brain"></i> Focus on breathing to anchor your mind.</li>
+              <li><i class="fas fa-leaf"></i> Spend a few minutes in silence daily.</li>
+              <li><i class="fas fa-smile"></i> Practice gratitude for a positive outlook.</li>
+              <li><i class="fas fa-leaf"></i> Take mindful walks in nature.</li>
+              <li><i class="fas fa-balance-scale"></i> Acknowledge your feelings without judgment.</li>
+              <li><i class="fas fa-hourglass-start"></i> Live in the present moment.</li>
+              <li><i class="fas fa-leaf"></i> Use guided meditation apps for support.</li>
+              <li><i class="fas fa-heart"></i> Engage in mindful eating—savor every bite.</li>
+              <li><i class="fas fa-smile-beam"></i> Smile intentionally; it enhances positivity.</li>
+              <li><i class="fas fa-tasks"></i> Avoid multitasking; focus on one thing at a time.</li>
+            </ol>
+            <button class="close" onclick="toggleContent('blog2')">Close</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Post 3 -->
+      <div class="blog-post">
+        <img src="https://via.placeholder.com/400x300" alt="Blog 3" class="blog-image">
+        <div class="content">
+          <h2 class="blog-title">The Importance of Hydration</h2>
+          <p class="blog-excerpt">Discover why staying hydrated is essential for health.</p>
+          <div class="infographic">
+            <i class="fas fa-tint"></i> Water | 
+            <i class="fas fa-heart"></i> Vitality
+          </div>
+          <button class="read-more" onclick="toggleContent('blog3')">Read More</button>
+        </div>
+        <div class="full-content" id="blog3">
+          <div class="content">
+            <h3>10 Benefits of Staying Hydrated</h3>
+            <ol>
+              <li><i class="fas fa-heart"></i> Boosts energy levels.</li>
+              <li><i class="fas fa-brain"></i> Improves brain function and clarity.</li>
+              <li><i class="fas fa-sun"></i> Enhances skin health.</li>
+              <li><i class="fas fa-tint"></i> Supports kidney function.</li>
+              <li><i class="fas fa-chart-line"></i> Regulates body temperature.</li>
+              <li><i class="fas fa-smile"></i> Reduces headaches caused by dehydration.</li>
+              <li><i class="fas fa-running"></i> Improves physical performance.</li>
+              <li><i class="fas fa-leaf"></i> Detoxifies your body naturally.</li>
+              <li><i class="fas fa-apple-alt"></i> Aids digestion.</li>
+              <li><i class="fas fa-bed"></i> Promotes better sleep quality.</li>
+            </ol>
+            <button class="close" onclick="toggleContent('blog3')">Close</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Post 4 -->
+      <div class="blog-post">
+        <img src="https://via.placeholder.com/400x300" alt="Food Triggers for Migraines" class="blog-image">
+        <div class="content">
+          <h2 class="blog-title">Food Triggers for Migraines</h2>
+          <p class="blog-excerpt">Discover common foods that may trigger migraines and how to avoid them.</p>
+          <div class="infographic">
+            <i class="fas fa-utensils"></i> Food | 
+            <i class="fas fa-head-side-cough"></i> Triggers
+          </div>
+          <button class="read-more" onclick="toggleContent('blog4')">Read More</button>
+        </div>
+        <div class="full-content" id="blog4">
+          <div class="content">
+            <h3>10 Foods That Can Trigger Migraines</h3>
+            <ol>
+              <li><i class="fas fa-cheese"></i> Aged Cheeses: Contain tyramine, which can provoke migraines.</li>
+              <li><i class="fas fa-coffee"></i> Caffeine: Excessive amounts or withdrawal can trigger headaches.</li>
+              <li><i class="fas fa-wine-bottle"></i> Alcohol: Especially red wine, due to tannins and sulfites.</li>
+              <li><i class="fas fa-cookie"></i> Processed Foods: Contain additives like MSG and nitrates.</li>
+              <li><i class="fas fa-apple-alt"></i> Artificial Sweeteners: Aspartame may trigger migraines in some individuals.</li>
+              <li><i class="fas fa-hotdog"></i> Cured Meats: Nitrates and nitrites can dilate blood vessels, causing headaches.</li>
+              <li><i class="fas fa-pepper-hot"></i> Spicy Foods: Can dilate blood vessels and trigger migraines.</li>
+              <li><i class="fas fa-chocolate-bar"></i> Chocolate: Contains caffeine and phenylethylamine, potential triggers.</li>
+              <li><i class="fas fa-bread-slice"></i> Yeast-Rich Foods: Breads and baked goods can be problematic.</li>
+              <li><i class="fas fa-tint"></i> Dehydration: While not a food, lack of water exacerbates migraines.</li>
+            </ol>
+            <button class="close" onclick="toggleContent('blog4')">Close</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Post 5 -->
+      <div class="blog-post">
+        <img src="https://via.placeholder.com/400x300" alt="Yoga Poses for Stress Relief" class="blog-image">
+        <div class="content">
+          <h2 class="blog-title">6 Yoga Poses for Stress Relief</h2>
+          <p class="blog-excerpt">Learn yoga poses that can help reduce stress and calm your mind.</p>
+          <div class="infographic">
+            <i class="fas fa-spa"></i> Relaxation | 
+            <i class="fas fa-brain"></i> Mind-Body Connection
+          </div>
+          <button class="read-more" onclick="toggleContent('blog5')">Read More</button>
+        </div>
+        <div class="full-content" id="blog5">
+          <div class="content">
+            <h3>6 Yoga Poses for Stress Relief</h3>
+            <ol>
+              <li><i class="fas fa-child"></i> <strong>Child’s Pose (Balasana):</strong> A grounding pose that relaxes the spine and calms the mind.</li>
+              <li><i class="fas fa-forward"></i> <strong>Forward Fold (Uttanasana):</strong> Stretches the back and helps release tension.</li>
+              <li><i class="fas fa-tree"></i> <strong>Tree Pose (Vrikshasana):</strong> Improves focus and balances emotions.</li>
+              <li><i class="fas fa-spa"></i> <strong>Seated Forward Bend (Paschimottanasana):</strong> Eases anxiety and promotes relaxation.</li>
+              <li><i class="fas fa-moon"></i> <strong>Legs-Up-the-Wall Pose (Viparita Karani):</strong> A restorative pose that reduces stress.</li>
+              <li><i class="fas fa-lotus-position"></i> <strong>Corpse Pose (Savasana):</strong> The ultimate relaxation pose for a calm mind.</li>
+            </ol>
+            <button class="close" onclick="toggleContent('blog5')">Close</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Post 6 -->
+      <div class="blog-post">
+        <img src="https://via.placeholder.com/400x300" alt="Benefits of Morning Walks" class="blog-image">
+        <div class="content">
+          <h2 class="blog-title">Benefits of Morning Walks</h2>
+          <p class="blog-excerpt">Explore the physical and mental benefits of starting your day with a walk.</p>
+          <div class="infographic">
+            <i class="fas fa-walking"></i> Fitness | 
+            <i class="fas fa-sun"></i> Positivity
+          </div>
+          <button class="read-more" onclick="toggleContent('blog6')">Read More</button>
+        </div>
+        <div class="full-content" id="blog6">
+          <div class="content">
+            <h3>10 Benefits of Morning Walks</h3>
+            <ol>
+              <li><i class="fas fa-heart"></i> Improves cardiovascular health.</li>
+              <li><i class="fas fa-brain"></i> Boosts mental clarity and focus.</li>
+              <li><i class="fas fa-smile"></i> Enhances mood through the release of endorphins.</li>
+              <li><i class="fas fa-sun"></i> Provides a dose of morning sunlight for vitamin D.</li>
+              <li><i class="fas fa-chart-line"></i> Helps regulate blood sugar levels.</li>
+              <li><i class="fas fa-apple-alt"></i> Encourages better appetite control.</li>
+              <li><i class="fas fa-leaf"></i> Connects you with nature, reducing stress.</li>
+              <li><i class="fas fa-burn"></i> Supports weight management by burning calories.</li>
+              <li><i class="fas fa-bed"></i> Improves sleep quality at night.</li>
+              <li><i class="fas fa-hand-holding-heart"></i> Strengthens the immune system over time.</li>
+            </ol>
+            <button class="close" onclick="toggleContent('blog6')">Close</button>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Health & Wellness Blog. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+/* General Reset */
+body, h1, h2, p, ol, li, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* Search Bar Styling */
+.search-container {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#search {
+  padding: 0.5rem;
+  width: 60%;
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #21867a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #196a5e;
+}
+
+button:focus {
+  outline: 2px solid #007bff;
+}
+<style>
+    .blog-image {
+        width: 100%; /* Make it scale to the width of its container */
+        max-width: 400px; /* Optional: restrict the maximum width */
+        height: auto; /* Maintain the aspect ratio */
+    }
+</style>
+
+<img src="https://i.postimg.cc/d0GMKXZX/migrane.jpg" alt="Migraine Image" class="blog-image">
+
+
+/* Blog Grid */
+.blog-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.blog-post {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.blog-title {
+  font-size: 1.5rem;
+}
+
+.read-more, .close {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.read-more:hover, .close:hover {
+  background: #0056b3;
+}
+
+/* Full Content */
+.full-content {
+  display: none;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+}
